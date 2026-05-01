@@ -1,0 +1,85 @@
+.GameLayout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 18px;
+	align-items: start;
+}
+
+.GameMain {
+	position: relative;
+}
+
+.GameSide {
+	position: relative;
+	display: grid;
+	gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background: rgba(255, 255, 255, 0.4);
+		transform: translateX(-50%);
+	}
+}
+
+.GameSide-tools {
+	position: relative;
+	display: grid;
+	gap: 12px;
+}
+
+.GameButton {
+	width: 100%;
+	appearance: none;
+	color: inherit;
+	padding: 10px 12px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition:
+		transform 120ms ease,
+		background 120ms ease;
+	outline: none;
+}
+
+.GameButton:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.GameOverlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: grid;
+	place-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+.GameOverlay-card {
+	padding: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	background: #090b0d;
+	display: grid;
+	gap: 12px;
+}
+
+.GameOverlay-title {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.GameOverlay-actions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}

@@ -1,0 +1,28 @@
+.Hud {
+	display: grid;
+	gap: 18px;
+}
+
+.Hud-stats {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	padding-top: 18px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Hud-stat {
+	display: grid;
+	gap: 8px;
+}
+
+.Hud-label {
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+
+.Hud-value {
+	font-size: 28px;
+}

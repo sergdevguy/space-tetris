@@ -1,0 +1,15 @@
+.Board {
+	--cell: 24px;
+
+	display: grid;
+	justify-content: center;
+	padding: 10px;
+	border: 1px solid var(--bg);
+	background: #090b0d;
+}
+
+.Cell {
+	width: var(--cell);
+	height: var(--cell);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+}

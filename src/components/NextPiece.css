@@ -1,0 +1,31 @@
+.NextPiece {
+	display: grid;
+	gap: 10px;
+}
+
+.NextPiece-title {
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	opacity: 0.8;
+}
+
+.NextPiece-content {
+	display: grid;
+	gap: 10px;
+	padding: 14px 10px;
+	background: #090b0d;
+}
+
+.NextPiece-grid {
+	display: grid;
+	gap: 2px;
+	justify-content: center;
+	align-items: center;
+}
+
+.NextPiece-cell {
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+}
