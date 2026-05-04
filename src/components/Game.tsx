@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 import { useTetrisGame } from '../hooks/useTetrisGame'
 import { useWindowEvent } from '../hooks/useWindowEvent'
+import { isTouchDevice } from '../utils'
 import { Board } from './Board'
 import { Button } from './Button'
 import { ControlsHelp } from './ControlsHelp'
@@ -88,7 +89,7 @@ export function Game() {
 						</CutCorners>
 					</div>
 				)}
-				<MobileButtons actions={actions} />
+				{isTouchDevice() && <MobileButtons actions={actions} />}
 			</div>
 		</div>
 	)
